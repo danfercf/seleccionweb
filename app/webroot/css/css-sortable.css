@@ -1,0 +1,45 @@
+/* tables */
+/* tables */
+table.tablesorter {
+/*	font-family:arial;*/
+	background-color: #CDCDCD;
+/*	margin:10px 0pt 15px;*/
+/*	font-size: 8pt;*/
+	width: 100%;
+	text-align: left;
+}
+table.tablesorter thead tr th, table.tablesorter tfoot tr th {
+	background-color: #e6EEEE;
+    border-bottom: 1px solid #BBBBBB;
+    cursor: pointer;
+	/*font-size: 9pt;*/
+	/*padding: 4px;*/
+    color: #3C648B;
+    font-weight: bold;
+}
+table.tablesorter thead tr .header {
+	background-image: url(http://tablesorter.com/themes/blue/bg.gif);
+	background-repeat: no-repeat;
+	background-position: center right;
+	cursor: pointer;
+}
+table.tablesorter tbody td {
+
+/*	padding: 4px;*/
+	background-color: #FFF;
+	/*vertical-align: top;*/
+
+    cursor: pointer;
+}
+table.tablesorter tbody tr.odd td {
+	background-color:#F0F0F6;
+}
+table.tablesorter thead tr .headerSortUp {
+	background-image: url(http://tablesorter.com/themes/blue/asc.gif);
+}
+table.tablesorter thead tr .headerSortDown {
+	background-image: url(http://tablesorter.com/themes/blue/desc.gif);
+}
+table.tablesorter thead tr .headerSortDown, table.tablesorter thead tr .headerSortUp {
+background-color: #8dbdd8;
+}

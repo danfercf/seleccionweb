@@ -1,0 +1,23 @@
+/* 
+    Document   : seleccionweb-ie
+    Created on : 28-feb-2011, 9:40:05
+    Author     : edcalo
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+#submit-comment{
+    margin-right: -7px !important;
+}
+
+form fieldset p textarea {
+    overflow: auto;
+}
+#submit-comment{
+    width: 306px;
+}
+

@@ -1,0 +1,93 @@
+.panel-center{
+    background: none repeat scroll 0 0 #DDDDDD;
+    float: left;
+    font-size: 10px;
+    width: 696px;
+}
+
+.panel-right{
+    background: none repeat scroll 0 0 #DDDDDD;
+    float: right;
+    font-size: 10px;
+    width: 240px;
+}
+.panel-right h2{
+    border-radius: 3px 3px 3px 3px;
+    color: #666666;
+    font-size: 13px;
+    margin: 0;
+    padding: 3px;
+    text-align: center;
+    text-shadow: 1px 1px #EEEEEE;
+}
+.panel-right ul{
+    margin: 0 0 0 10px;
+    padding: 0;
+}
+.panel-right ul li{
+    list-style: none outside none;
+    margin-bottom: 2px;
+}
+.panel-right ul li span{
+    display: inline-block;
+    margin-top: -8px;
+    position: relative;
+    top: 5px;
+    
+}
+.panel-right ul li a{
+cursor: pointer;
+    
+}
+.tabla-lang{
+    font-family: Trebuchet MS;
+    
+}
+.tabla-lang tr{
+    
+    
+}
+.tabla-lang td{
+    border-bottom: 1px solid #CCCCCC;
+    font-size: 12px;
+    padding: 6px;
+    text-align: center;
+    
+}
+.tabla-lang th{
+    background: none repeat scroll 0 0 #EEEEEE;
+    font-size: 12px;
+    padding: 1px 8px;
+    text-transform: uppercase;
+}
+.ui-tabs .ui-tabs-panel ,.ui-accordion .ui-accordion-content {
+   padding: 10px 5px !important;
+}
+.jHtmlArea iframe{
+        border: 1px solid #888888;
+    height: 212px;
+    margin-top: 6px;
+    width: 660px;
+}
+
+.jHtmlArea iframe body{
+    
+    }
+#tabs ul li a{
+   cursor: pointer; 
+}
+#tabs ul li a img{
+        margin: 0 4px 0 0;
+}
+.save_language{
+    float: right;
+    margin-bottom: 6px;
+    margin-top: 18px;
+}
+
+.jGrowl-notification{
+    background: url("../img/messagebox.png") no-repeat scroll 2px center transparent
+}
+.jGrowl-notification .jGrowl-message {
+    margin-left: 40px;
+    }
