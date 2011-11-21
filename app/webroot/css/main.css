@@ -1,0 +1,1079 @@
+/* ---Cabecera --- */
+@font-face
+{  
+    font-family:'Museo500';  
+    src: url('font/MuseoSans_500.otf');  
+} 
+@font-face
+{  
+font-family:'MuseoSans';  
+src: url('font/MuseoSans-300.otf');  
+} 
+
+*{
+    font-family: MuseoSans;
+} 
+#header
+{
+    background: url("../img/bg_header.png") repeat-y scroll left top transparent;
+    height: 108px;
+    overflow: hidden;
+}
+#head
+    {
+        overflow: hidden;
+        margin-top: 12px; 
+    }
+/* separacion*/
+.sep
+    {
+      background:url(../img/bg_sep.png) no-repeat left top transparent;
+      height:5px;   
+      margin-top: 12px;
+      *margin-top: 20px;
+    }
+.nullSep
+        {
+            margin-top: 0 !important;
+        }
+a
+    {
+        text-decoration: none;
+        color:#fff;
+        font: Arial;
+        font-size:11px;
+    }
+#main
+{
+    width:960px;
+    margin:0 auto;
+
+}
+
+.menu_top{
+    /*overflow: hidden;*/
+    width: 245px;
+    float:right;
+}
+#main #head .menu_top ul { } 
+#main #head .menu_top ul li.left{
+    background:url("../img/bg_menutop.png") repeat-y left top transparent;
+    float: left;
+    height: 31px;
+    margin-top: 1px;
+    padding: 0 0 0 12px;
+    width: 60px;
+}
+#main #head .menu_top ul li.center{
+    background:url("../img/bg_menutop1.png") repeat-y left top transparent;
+    float: left;
+    height: 29px;
+    padding: 3px 0 0 12px;
+    width: 53px;
+}
+
+#main #head .menu_top ul li.right
+{
+  /*  background:url(../img/bg_menutop2.png) repeat-y left top transparent;*/
+    float: left;
+    height: 29px;
+     padding: 3px 0 0 0;
+    width: 80px;
+    
+    
+}
+
+#main #head .menu_top ul li a
+{
+    padding: 2px 0 0 2px;
+    
+    
+}
+#nav {
+        width: auto;
+        height: auto;
+		margin:0; 
+		padding:0; 
+		list-style:none;       
+	}	
+
+/* make the LI display inline */
+/* it's position relative so that position absolute */
+/* can be used in submenu */
+#nav li 
+    {
+	float:left; 
+	display:inline-block; 
+	width: 70px; 
+    background: url("../img/bg_menutop.png") repeat-y scroll left top transparent;
+	position:relative;
+	z-index:500; 
+	margin:0 1px;   
+    height: auto ;  
+}
+
+
+/* this is the parent menu */
+#nav li a {
+	display:inline-block; 
+	padding:8px 5px 0 5px; 
+	font-weight:700;  
+	height:23px; 
+	text-decoration:none; 
+	color:#fff; 
+	text-align:center; 
+	color:#333;
+}
+
+
+#nav li a:hover 
+{
+	color:#fff;
+   /*color: #FFFFFF;*/
+}
+
+#nav ul li  img 
+{   
+ display: inline-block;
+    float: none;
+    left: 2px;
+    position: absolute;
+    top: 3px;
+    width: 15px;
+}
+#nav ul li  a label.lNomPais_1_2 
+{   
+ float: none;
+    left: 19px;
+    position: absolute;
+    top: 2px;
+}	 
+     
+
+#nav ul li  a label.lNomPais_3 
+{   
+   display: inline-block;
+    float: none;
+    left: 15px;
+    position: absolute;
+        top: 2px;
+    width: 15px;
+     
+}
+
+#nav li  a label.L_idiomas 
+{   
+   
+   float: none;
+    left: 10px;
+    position: absolute;
+    top: 8px;
+   /* width: 15px;*/
+     
+}
+
+/* you can make a different style for default selected value */ 
+#nav a.selected 
+{
+	
+   /* color:#f00 ;*/
+   color:#FFFFFF ;
+    
+    
+}
+
+/* submenu, it's hidden by default */
+#nav ul {
+	position:absolute; 
+	left:0; 
+	display:none; 
+	margin:0 0 0 -1px; 
+	padding:0; 
+	list-style:none;
+    
+    
+    
+}
+
+#nav ul li 
+{
+	width: 70px;
+  /*  height: au;*/ 
+	float:left;
+     
+	border-top:1px solid #fff ;
+   /* display: inline;*/
+    /*border-top:1px solid #FFFFFF  ;*/
+    background: url("../img/bg_menutop.png")repeat-y scroll left top transparent ;
+    
+}
+
+/* display block will make the link fill the whole area of LI */
+#nav ul a 
+{
+	display:inline-block;  
+	height:15px;
+	padding: 8px 5px;
+   /* background-image: url("../img/espaniol.jpg") ;*/ 
+/*	color:#666;*/
+        color: #FFFFFF;
+}
+
+
+#main #head .down{
+    float: left;
+    height: 42px;
+    overflow: hidden;
+    width: 960px;
+    margin: 8px 0;
+}
+#main #head .down .logo{
+    background:url(../img/logo.png) no-repeat left top transparent;
+    float: left;
+    height: 42px;
+    width: 228px;
+}
+#main #head .down ul.menu{
+     float: right;
+    overflow: hidden;
+    width: 450px;
+}
+#main #head .down ul.menu li{
+    float: left;
+    margin: 13px 0 0 32px;
+}
+#main #head .down ul.menu li a{
+    font-family: MuseoSans;
+    font-size: 12px;
+}
+#main #head .bar img{
+    /*background:url(../img/sepa.png) no-repeat left top transparent;*/
+    height: 5px;
+    width: 960px;
+    float: left;  
+}
+
+#main .content_head
+{
+    overflow: hidden;
+    margin: 40px 0 60px;
+}
+#main .content_head .text{
+    width:460px;
+    float:left;
+    margin-top:8px;
+    overflow: hidden;
+    
+     
+}
+#main .content_head .text h1{
+    color:#fff;
+    font-size:53px;
+    font-family:Museo500;
+}
+#main .content_head .text p{
+    color: #fff;
+    font-size: 14px;
+    line-height: 25px;
+    margin: 17px 0;
+}
+#main .content_head .video{
+    background:url(../img/video.png) no-repeat left top transparent;
+    width:472px;
+    height:320px;
+    float:right;
+}
+#main .content_head .btn{
+    background:url(../img/btn_home.png) no-repeat left top transparent;
+    float: left;
+    height: 40px;
+    padding: 20px 0 0 35px;
+    width: 195px;
+    color:#fff;
+    font-weight: bold;
+    font-family:MuseoSans;
+    font-size: 16px; 
+    cursor: pointer;
+}
+#main .content_head p.btn_p{
+    color: #FFFFFF;
+    font-size: 14px;
+    line-height: 25px;
+    margin: 17px 0;
+    padding-top: 15px;
+}
+
+#content{
+    overflow: hidden;
+    min-height:500px;
+}
+#content .head_content{
+    background:url(../img/bg_content.png) repeat-y left top transparent;
+    height:123px;
+    overflow: hidden;
+}
+#content .head_content .main
+        {
+            width:960px;
+            margin:0 auto;
+            overflow:hidden;
+        }
+#content .head_content .main h2{
+    color: #444444;
+    float: left;
+    font-size: 30px;
+    margin: 42px 0;
+    font-family: Museo500;
+}
+#content .head_content .main .btn_1{
+    background:url(../img/btn_content.png) no-repeat left top transparent;
+    float: left;
+    height: 43px;
+    margin: 30px 0 0 15px;
+    padding-top: 15px;
+    width: 315px;
+}
+#content .head_content .main .btn_1 a{
+     color: #FFFFFF;
+    font-family: MuseoSans;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 0 0 0 23px;
+}
+#content .content_content{
+    background:url(../img/bg_content_content.png) repeat-y left top transparent;
+}
+#content .content_content #main{
+    margin:0 auto;
+    width:960px;
+    overflow: hidden;
+}
+#content .content_content #main .content_left{
+    width:630px;
+    margin: 20px 15px 15px 0;
+    float: left;
+}
+#content .content_content #main .content_left_text{
+    background-color: #ffffff;
+    margin-bottom: 25px;
+    overflow: hidden;
+}
+#content .content_content #main .content_left_text h3{
+    margin:30px 0 40px 20px;
+    color:#444444;
+    font-size:24px;
+    font-family: MuseoSans;
+}
+#content .content_content #main .content_left_text ul li{
+    margin: 0 0 35px 35px;
+    overflow: hidden;
+    
+}
+#content .content_content #main .content_left_text ul li img{
+    float:left;
+    margin: 0 15px 0 0;
+}
+#content .content_content #main .content_left_text ul li .text_info{
+    float:left;
+    width: 450px;
+}
+#content .content_content #main .content_left_text ul li .text_info h4 a{
+    float:left;
+    color:#5290b3;
+    font-size:16px;
+    margin-bottom: 5px;
+    font-family: MuseoSans;
+}
+#content .content_content #main .content_left_text ul li .text_info p{
+    float:left;
+    font-family: MuseoSans;
+    font-size:12px;
+}
+#content .content_content #main #sidebar{
+    background-color: #ffffff;
+    padding: 30px 0 18px 20px;
+}
+#content .content_content #main #sidebar p{
+    margin: 0 0 15px 20px;
+    font-family: Museo500;
+    font-size:20px;
+}
+
+#content .content_content #main #sidebar .content_sidebar ul{
+    overflow:hidden;
+}
+#content .content_content #main #sidebar .content_sidebar ul li{
+    float:left;
+    margin-left: 23px;
+}
+#content .content_content #main #sidebar .content_sidebar ul li a.row img{
+    margin-top: 10px;
+}
+#content .content_content #main .content_right{
+    width:310px;
+    margin: 20px 0;
+    float: left;
+}
+#content .content_content #main .content_right .content_right_up{
+    background-color: #ffffff;
+    margin-bottom: 25px;
+    padding: 20px 0;
+}
+#content .content_content #main .content_right .content_right_up .main{
+    width:265px;
+    margin:0 auto;
+}
+#content .content_content #main .content_right .content_right_up .main img{
+    margin: 0 0 10px;
+}
+#content .content_content #main .content_right .content_right_down{
+    background-color: #ffffff;
+    padding: 20px 0 0;
+}
+#content .content_content #main .content_right .content_right_down .main{
+    width:280px;
+    margin:0 auto;
+}
+#content .content_content #main .content_right .main h4{
+    font-size: 20px;
+    font-family: Museo500;
+    margin:0 0 15px 15px;
+}
+#content .content_content #main .content_right .main p{
+    font-size: 11px;
+    font: Arial;
+    margin-left: 7px;
+}
+#content .content_content #main .content_right .content_right_down .main ul{
+    overflow:hidden;
+}
+#content .content_content #main .content_right .content_right_down .main ul li{
+    background:url(../img/doted.png) no-repeat left bottom transparent;
+    float:left;
+    margin-top: 10px;
+}
+#content .content_content #main .content_right .content_right_down .main ul li img{
+    float:left;
+    margin: 0 5px 0 0;
+}
+#content .content_content #main .content_right .content_right_down .main ul li .right_text{
+    float:left;
+    width: 223px;
+    margin-bottom: 10px;
+}
+#content .content_content #main .content_right .content_right_down .main ul li .right_text p.title{
+    color:#136798;
+    font-size: 12px;
+    font:Arial;
+}
+#content .content_content #main .content_right .content_right_down .main ul li .right_text p.date{
+    color:#71972c;
+    font-size: 11px;
+    font:Arial;
+}
+#content .content_content #main .content_right .content_right_down .main ul li .right_text p.parraph{
+    font-size: 11px;
+    font:Arial;
+}
+#content .content_content #main .content_right .content_right_down .main ul li p{}
+
+
+#footer{
+    background:url(../img/bg_header.png) repeat-y left top transparent;
+    overflow: hidden;
+}
+#footer .main{
+    margin: 50px auto;
+    width:960px;
+    overflow:hidden;
+}
+#footer .main .left{
+    float:left;
+    width:250px;
+    margin-right: 20px;
+}
+#footer .main .left .logo{
+    background:url(../img/logo.png) no-repeat left top transparent;
+    width:228px;
+    height:42px;
+}
+#footer .main .left p{
+    font-size: 11px;
+    font:Arial;
+    color:#9cbdd1;
+    margin-left: 10px;
+}
+#footer .main .menu_footer{
+    float:left;
+    width:165px;
+    margin-right: 40px;
+}
+#footer .main .menu_footer ul li{
+    background:url(../img/sep.png) no-repeat left bottom transparent;
+    height: 20px;
+    margin-bottom: 5px;
+}
+#footer .main .menu_footer ul li img{
+    float:left;
+    margin:4px 4px 0 0;
+}
+
+#footer .main .menu_footer ul li a{
+    color:#fff;
+    font-size: 11px;
+    font:Arial;
+}
+#footer .main .menu_footer ul li a:hover{
+    color:#8fb4ca;
+}
+#footer .main .right{
+    float: left;
+    width: 480px;
+}
+#footer .main .right .newsletter{
+    background:url(../img/newsletter.png) no-repeat left bottom transparent;
+    height: 76px;
+    margin-bottom: 5px;
+}
+#footer .main .right .newsletter p{
+    font-size: 11px;
+    font:Arial;
+    margin-bottom: 10px;
+}
+#footer .main .right .newsletter input.input{
+    background: url("../img/bg_input.png") no-repeat scroll left top transparent;
+    border: medium none;
+    color: #444444;
+    height: 35px;
+    margin-right: 10px;
+    padding-left: 10px;
+    width: 271px;
+    padding-top: 8px \9;
+   *padding-top: 0px;
+    
+}
+
+#footer .main .right .newsletter .submit{
+    background:url(../img/submit.png) no-repeat left top transparent;
+    /*
+    *padding-top: 8px;
+    padding-top: 8px \9;
+    */
+    height:37px;
+    *height:37px;
+    height:37px  \9;
+    
+    width:184px;
+    border: medium none;
+    color: #FFFFFF;
+    font-family:MuseoSans;
+    font-size:12px;
+    cursor: pointer;
+}
+#footer .main .right p{
+    color:#fff;
+}
+#footer .main .right .social_networdks p{
+    font-size: 11px;
+    font:Arial;
+    margin-bottom: 15px;
+}
+#footer .main .right .social_networdks ul{
+    overflow: hidden;
+}
+#footer .main .right .social_networdks ul li{
+    float:left;
+    margin-right: 17px;
+}
+/* -- ComoFunciona -- */
+#content 
+        .head_content 
+                    .main h1
+                    {
+                        font-size: 48px;
+                        font-family:Museo500;
+                        margin:32px auto;
+                        text-align: center;
+                        color:#444444;
+                    }
+
+#content 
+        .content_content 
+                        #main 
+                            .content_up_how
+                            {
+    background-color: #FFFFFF;
+//    height: 850px;
+    height:  auto;
+    margin-top: 20px;
+    overflow: hidden;
+    padding-bottom: 74px;
+                            }
+                            
+#content .content_content #main .content_up_how .video{
+   /* background:url(../img/video_how.png) no-repeat left top transparent;*/
+    float: left;
+    height: 284px;
+    margin: 0 20px 50px 30px;
+    width: 418px;
+}
+#content .content_content #main .content_up_how .text{
+    float: left;
+    margin: 0 0 50px;
+    width: 450px;
+}
+#content .content_content #main .content_up_how .text p{
+    font-family:Arial;
+    font-size:12px;
+    text-align: justify;
+    line-height: 20px;
+    width: 420px; 
+    
+}
+#content .content_content #main .content_up_how .text .text_up{
+    margin-bottom: 25px;
+}
+#content .content_content #main .content_up_how .text .text_down{
+    margin-bottom: 25px;
+}
+#content .content_content #main .content_up_how .text input.buttom{
+    background:url(../img/btn_how.png) no-repeat left top transparent;
+    height: 58px;
+    width:426px;
+    border: medium none;
+    cursor: pointer;
+}
+#content .content_content #main .content_down_how{
+    background-color: #FFFFFF;
+    margin-bottom: 50px;
+    overflow: hidden;
+}
+#content .content_content #main .content_down_how .content_down_how_left{
+    float:left;
+    margin:50px 120px 50px 30px;
+    width: 370px;
+}
+#content .content_content #main .content_down_how .content_down_how_left ul{
+    margin-bottom: 12px;
+}
+#content .content_content #main .content_down_how .content_down_how_left ul li{
+    background:url(../img/bg_li_how.png) no-repeat left top transparent;
+    height: 42px;
+    margin-bottom: 10px;
+    padding: 7px 0 0 30px;
+    width: 349px;
+}
+#content .content_content #main .content_down_how .content_down_how_left ul li a{
+    font:arial;
+    font-size: 12px;
+    color: #000000;
+}
+#content .content_content #main .content_down_how .content_down_how_left a.more{
+    background:url(../img/bg_a.png) no-repeat right center transparent;
+    font-size: 12px;
+    color: #075b8d;
+    font-style: italic;
+    font-family:Georgia;
+    float: right;
+    width: 190px;
+}
+#content .content_content #main .content_down_how h3{
+    color:#075b8d;
+    font-size:26px;
+    font-family:Museo500;
+    border-bottom: 3px solid #075b8d;
+    margin-bottom: 20px;
+    height: 35px;
+}
+#content .content_content #main .content_down_how .content_down_how_right{
+    float:left;
+    margin:50px 0 40px 0;
+    width: 370px;
+    overflow: hidden;
+}
+
+#content .content_content #main .content_down_how .content_down_how_right ul{ }
+#content .content_content #main .content_down_how .content_down_how_right ul li {
+    margin-bottom: 10px;
+}
+#content .content_content #main .content_down_how .content_down_how_right ul li img.photo{
+    width:52px;
+    height:41px;
+    margin-right:10px;
+    float:left; 
+    margin-top: 10px;  
+}
+#content .content_content #main .content_down_how .content_down_how_right ul li img.line{
+    width:375px;
+    height:5px;
+    float:left;
+}
+#content .content_content #main .content_down_how .content_down_how_right ul li .test{
+    float:left;
+    width: 307px;
+    margin: 10px 0;
+}
+#content .content_content #main .content_down_how .content_down_how_right ul li .test p{
+    font-size: 12px;
+    font-style: italic;
+    font-family:Georgia;
+    text-align: justify;
+}
+#content .content_content #main .content_down_how .content_down_how_right ul li .test p a{
+    font-size: 12px;
+    color: #6ab100;
+    font-family:Arial;
+    text-decoration:  underline !important;
+}
+#content .content_content #main .content_down_how .content_down_how_right ul li .test img.open{
+    width:22px;
+     height: 15px;
+}
+#content .content_content #main .content_down_how .content_down_how_right ul li .test img.close{
+    width:22px;
+     height: 15px;   
+}
+
+
+/* -- Planes  -- */
+#content .content_content #main .content_up_how h2{
+    color: #58A500;
+    font-family: MuseoSans;
+    font-size: 30px;
+    text-align: center;
+}
+
+#content .content_content #main .content_up_how h3{
+    color: #136798;
+    font-family: MuseoSans;
+    font-size: 23px;
+    text-align: center;  
+}
+
+#content .content_content #main .content_up_how .plans{
+    margin: 25px auto;
+    width: 800px;
+    overflow:hidden;
+}
+#content .content_content #main .content_up_how .plans ul{
+    overflow:hidden;
+}
+
+#content .content_content #main .content_up_how .plans ul li{
+    background:url(../img/bg_plans.png) no-repeat left center transparent;
+    float:left;
+    margin-right:10px;
+    width:187px;
+    height:223px;
+}
+#content .content_content #main .content_up_how .plans p.basic{
+    font-family: MuseoSans;
+    font-size: 26px;
+    margin: 15px auto;
+    width: 90px;
+}
+#content .content_content #main .content_up_how .plans p.fifty{
+    margin: 10px 0 0 50px;
+    font-family:MuseoSans;
+    font-size:30px;
+    color:#58a500;
+    float:left;
+}
+#content .content_content #main .content_up_how .plans p.usd{
+    /*margin: 25px 0 0 5px;*/
+    font-family:MuseoSans;
+    font-size:14px;
+    float:right;
+    
+    /*y*/
+     margin-right: -556px;
+    margin-top: -25px;
+}
+#content .content_content #main .content_up_how .plans p.select{
+    margin: 25px 0 0 20px;
+    font-family:MuseoSans;
+    font-size:14px;
+    float:left;
+}
+#content .content_content #main .content_up_how .plans input.reg{
+    background:url(../img/btn_reg.png) no-repeat left top transparent;
+    width:154px;
+    height:44px;
+    border: medium none;
+    margin: 20px 0 0 20px;
+    cursor:pointer;
+}
+
+#content .content_content #main .content_up_how .middle{
+    margin: 0 auto;
+    overflow: hidden;
+    width: 870px;
+}
+#content .content_content #main .content_up_how .middle .advantage{
+    float:left;
+    margin-right: 15px;
+    width:420px;
+}
+#content .content_content #main .content_up_how .middle  h3{
+    border-bottom: 3px solid #075B8D;
+    color: #075B8D;
+    font-family: Museo500;
+    font-size: 26px;
+    height: 35px;
+    margin-bottom: 20px;
+    width: 420px;
+}
+#content .content_content #main .content_up_how .middle .advantage ul{
+}
+#content .content_content #main .content_up_how .middle .advantage ul li{
+    background:url(../img/bg_li_plans.png) no-repeat left top transparent;
+    width:393px;
+    height:51px;
+    padding: 11px 0 0 25px;
+}
+#content .content_content #main .content_up_how .middle .advantage ul li a{
+    font-size: 12px;
+    font-family:Arial;
+    color:#000;
+}
+
+
+#content .content_content #main .content_up_how .middle .price{
+    float: right;
+    width: 430px;
+}
+#content .content_content #main .content_up_how .middle .price p.solid{
+    font-family: MuseoSans;
+    font-size:16px;
+    font-weight: normal;
+    width: 225px;
+    margin:3px auto;
+    color:#767676;
+}
+#content .content_content #main .content_up_how .middle .price p.solid span{
+    font-family: MuseoSans;
+    font-size:20px;
+    font-weight: bold;
+    color:#000; 
+}
+#content .content_content #main .content_up_how .middle .price .regulator{
+    overflow:hidden;
+    margin-top: 35px;
+}
+#content .content_content #main .content_up_how .middle .price .regulator img{
+    width:420px;
+    height:28px;
+    float:left;
+}
+#content .content_content #main .content_up_how .middle .price .regulator p.left{
+    float:left;
+    font-family: MuseoSans;
+    font-size:32px;
+    width: 50px;
+    
+}
+#content .content_content #main .content_up_how .middle .price .regulator p.right{
+    float:right;
+    font-family: MuseoSans;
+    font-size:32px; 
+    width: 60px;
+}
+#content .content_content #main .content_up_how .middle .price .hire{
+    background:url(../img/bg_.png) no-repeat left top transparent;
+    height: 69px;
+    margin-top: 15px;
+    padding: 20px 0 0 45px;
+    width: 377px;
+}
+
+#content .content_content #main .content_up_how .middle .price .hire p
+{
+    font-family: MuseoSans;
+    font-size:16px;
+      width: 385px;
+}
+#content .content_content #main .content_up_how .middle .price .hire p span{
+    font-family: MuseoSans;
+    font-size:32px;
+    font-weight: bold;
+    color:#4c9c00;
+    margin-right:5px;
+}
+#content .content_content #main .content_up_how .middle .price .hire p input.bottom{
+    background:url(../img/hire.png) no-repeat left top transparent;
+    width:154px;
+    height:44px;
+    border: medium none;
+    margin-left: 72px;
+}
+
+
+#content .content_content #main .content_up_how .sidebar{
+    overflow:hidden;
+    margin:35px auto;
+    width:780px;   
+}
+#content .content_content #main .content_up_how .sidebar a.title{
+    font-size:24px;
+    font-family: MuseoSans;
+    color:#1d6a97;
+    margin-bottom: 25px;
+    margin-left: 100px;
+}
+#content .content_content #main .content_up_how .sidebar .side a{
+    margin-top: 10px;
+    float: left;
+    margin-right: 15px;
+}
+#content .content_content #main .content_up_how .sidebar .side ul li{
+    float:left;
+    margin-right: 25px;
+}
+/*  --- Contactanos  --- */
+#content .head_content .main h1.title{
+    color: #444444;
+    font-family: Museo500;
+    font-size: 48px;
+    margin: 32px auto;
+    width: 240px;
+}
+#content .content_content #main .content_up_how p{
+    margin:0 auto;
+    width:640px;
+    font-size: 20px;
+    font-family:MuseoSans;
+    color:#444444;
+}
+    #content .content_content #main .content_up_how p span 
+    {
+        
+        
+        font-family: MuseoSans;
+        font-size: 20px;
+        color: #67af00;
+    }
+#content .content_content #main .content_up_how .contacts{
+    margin: auto;
+    overflow: hidden;
+    padding: 0 94px;
+    
+}
+#content .content_content #main .content_up_how .contacts .contacts_left{
+    width:420px;
+    float:left;
+}
+
+#content .content_content #main .content_up_how .contacts .contacts_left h3.subtitle{
+    border-bottom:2px solid #075b8d;
+    color: #075b8d;
+    font-family: Museo500;
+    font-size: 23px;
+    width:420px;
+    margin: 25px 0;  
+}
+#content .content_content #main .content_up_how .contacts .contacts_left ul li{
+    color:#80bc22;
+    font-size: 18px;
+    font-family: MuseoSans;
+    margin: 5px 0 0;
+}
+#content .content_content #main .content_up_how .contacts .contacts_left ul li.social{
+    float:left;
+    margin:0 25px 0 0;
+}
+#content .content_content #main .content_up_how .contacts .form{
+    width:270px;
+    float:right;
+}
+#content .content_content #main .content_up_how .contacts .form h3.subtitle{
+    width:270px;
+    border-bottom:2px solid #075b8d;
+    color: #075b8d;
+    font-family: Museo500;
+    font-size: 23px;
+    margin: 25px 0;
+}
+#content .content_content #main .content_up_how .contacts .form form input{
+    background:url(../img/input.png) no-repeat left top transparent;
+    height:40px;
+    width: 265px;
+    border: medium none;  
+}
+#content .content_content #main .content_up_how .contacts .form form textarea{
+    background:url(../img/textarea.png) no-repeat left top transparent;
+    height:138px;
+    width: 265px;
+    border: medium none;  
+}
+#content .content_content #main .content_up_how .contacts .form form input.submit{
+    background:url(../img/send.png) no-repeat left top transparent;
+    height:39px;
+    width: 265px;
+    border: medium none;
+    margin-top: 20px;
+    cursor:pointer;
+}  
+#content .content_content #main .content_up_how .contacts .form form p{
+    font-family: MuseoSans ;
+    font-size:16px;
+    color:#444444;
+}
+
+
+/* --- regsitrate --- */
+#content .head_content .main h1.title_reg{
+    margin: 30px auto;
+    overflow: hidden;
+    width: 400px;
+}       
+
+
+/*#content .content_content #main .content_up_how .contacts*/ 
+#EligOp h3.subTitle
+        {
+              /*
+              border-bottom: 2px solid #075B8D;
+              color: #075B8D;
+              float: left;
+              */
+              border-bottom: 10px solid #075B8D ;
+                color: #075B8D;
+                font-family: Museo500;
+                font-size: 23px;
+                margin: 25px 0;
+                width: 420px;
+                border: 5px;
+              
+        }
+
+/*SLIDER*/
+.bx-wrapper{
+    margin: auto;
+    width: 770px !important;
+}
+.bx-wrapper .bx-window{
+    margin: 0 50px;
+    width: 655px !important;
+}
+.bx-wrapper .bx-prev{
+    background: url("../img/row_left.png") repeat scroll 0 0 transparent;
+    height: 36px;
+    left: 1px;
+    position: absolute;
+    top: 18px;    
+    width: 19px;
+    text-indent: 9999px;    
+    
+}
+
+.bx-wrapper .bx-next{
+    
+    background: url("../img/row_right.png");
+    height: 36px;
+    right: 1px;
+    position: absolute;
+    top: 18px;
+    width: 19px;
+    text-indent: 9999px;
+}
+

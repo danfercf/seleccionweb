@@ -1,0 +1,100 @@
+
+.contacts .top{
+    margin: auto;
+    width: 510px;    
+}
+.contacts .botton{
+    margin: auto;
+    width: 578px;   
+}
+.registrate .botton
+{
+    width: 800px;
+   
+}
+.contacts .botton .Divs_Izq{
+     float: left;
+    margin: 0;
+    padding: 0;   
+}
+.contacts.botton .Divs_Der{
+      float: right;
+        margin-right: 194px;
+        
+        *margin-right: 220px;
+
+   /*
+   margin-right: -30px; 
+   margin: 0;
+    padding: 0;
+    */  
+}
+.contacts .botton .Divs_Izq, .contacts .botton .Divs_Der{
+    height: 72px;
+    margin-bottom: 4px;
+    overflow: hidden;
+     height: 80px \9;
+    
+}
+    
+.contacts .botton label{
+    color: #333333;
+    display: block;
+    float: left;
+    font-size: 14px;
+    margin-bottom: 5px;
+     /*margin-left: 4px;*/
+    width: 100%;
+}
+.contacts .botton input
+{
+    -moz-border-radius: 5px 5px 5px 5px;
+     -moz-box-shadow: 0 -1px 2px #EEEEEE;
+    
+    background: none repeat scroll 0 0 #F7F6EE;
+    border: 1px solid #CCCCCC;
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: 0 -1px 2px #EEEEEE;
+    color: #444444;
+    height: 27px;
+    padding: 2px 4px;
+    /*width:265px;*/
+    width:260px;
+}
+
+.contacts .botton label.L4_area , .contacts .botton label.L4_Numero{
+    display: inline-block;
+    float: none;
+    /*margin: 0 0 4px;*/
+    width: 64px;   
+    font-size: 11px !important;
+    color: #BBB !important; 
+}
+
+.contacts .botton label.L5_MM , .contacts .botton label.L5_DD{
+    color: #BBBBBB !important;
+    display: inline-block;
+    float: none;
+    font-size: 11px !important;
+     margin-left: 30px;
+     
+    /*
+    margin-left: 30px;
+    margin: 0 !important;
+     text-align: center;*/
+    width: 46px;
+    
+    *width: 60px; 
+}
+.ui-slider-horizontal .ui-slider-handle{
+    background: url("images/redondo.png") repeat scroll 0 0 transparent !important;
+    border: medium none !important;
+    height: 27px !important;
+    width: 27px !important;  
+}
+ .ui-slider-horizontal {
+    background: url("images/barra.png") no-repeat scroll 0 8px transparent !important;
+    border: medium none !important;
+    height: 20px !important;
+    width: 425px !important;
+}

@@ -9,70 +9,53 @@ $(document).ready(function() {
 	$("#contact-form").validate();
 });
 </script>
-<div id="main-contact">
-    <div id="box-contact-left">
-    <?php echo $ba['contacto'];?>
-        <!--h2>Contacto</h2>
-        <p>Si desea recibir informaci&oacute;n sobre nuestro servicio, comun&iacute;quese con nosotros completando el formulario o por los siguientes medios:</p>
-        <ul>
-            <li><h4>Contactos Personales</h4></li>
-            <li><a href="mailto:luis.ninni@seleccionweb.com">luis.ninni@seleccionweb.com</a></li>
-            <li><a href="mailto:micaela.ninni@seleccionweb.com">micaela.ninni@seleccionweb.com</a></li>
-        </ul>
-        <ul>
-            <li><h4>Contactos por Areas</h4></li>
-            
-            <li><a href="mailto:info@seleccionweb.com">info@seleccionweb.com</a></li>
-            <li><a href="mailto:ventas@seleccionweb.com">ventas@seleccionweb.com</a></li>
-            <li><a href="mailto:soporte@seleccionweb.com">soporte@seleccionweb.com</a></li>
-            <li><a href="mailto:clientes@seleccionweb.com">clientes@seleccionweb.com</a></li>
-            <li><a href="mailto:candidatos@seleccionweb.com">candidatos@seleccionweb.com</a></li>
-        </ul>
-        <h4>Redes sociales</h4>
-        <ul class="red_social">                               
-             <li class="skype">
-                <a title="Skipe" href="#">Seleccionweb</a>
-             </li>
-             <li class="fb">
-                <a title="facebook" href="http://www.facebook.com/pages/Selecci%C3%B3nWeb/180908685290201" target="_blank">Facebook</a>
-             </li>
-             <li class="tw">
-                <a title="twitter" href="http://twitter.com/seleccionweb" target="_blank">Twitter</a>
-             </li>
-             <li class="in">
-                <a title="LinkedIn" href="http://www.linkedin.com/company/selecci-nweb" target="_blank">LinkedIn</a>
-             </li>
-        </ul-->
-    </div>
-    <div id="box-contact-right">
-        <?php
-            echo $this->Form->create('Message', array('action'=>'contact', 'id'=>'contact-form'))
-        ?>
-        <div class="cont-contact-top">
-            <h2><?php echo $e['contactanos'];?></h2>
-        </div>
-        <ul class="cont-contact-center">
-            <li>
-                <label><?php echo $f['nombre'];?></label>
-                <input type="text" name="name" value="" id="name-contact" class="required"/>                                         
-            </li>
-            <li>
-                <label><?php echo $f['empresa'];?></label>
-                <input type="text" name="corporate" value="" id="empresa-contact" class="required" />                                         
-            </li>
-            <li>
-                <label><?php echo $f['email'];?></label>
-                <input type="text" name="email" value="" id="email-contact" class="required email"/>                                           
-            </li>
-            <li>
-                <label><?php echo $f['mensaje'];?></label>
-                <textarea cols="30" rows="5" name="comment" id="comment-contact" class="required"></textarea>                                                                                         
-            </li>
-            <li class="form-contact-buttom">
-               <button><?php echo $b['enviar'];?></button>
-            </li>
-        </ul>
-        <div class="cont-contact-bottom"></div>  
-        <?php echo $this->Form->end();?>
-    </div>
+<div id="content">
+            <div class="head_content"> 
+              <div class="main">
+                <h1 class="title"> Contactanos </h1>
+              </div>  
+            </div>    
+              <div class="content_content">
+               <div id="main">
+                    <div class="content_up_how">
+                        <p>  Si desea recibir información sobre nuestro servicio, comuníquese </p>
+                        <p> con nosotros completando el formulario o por los siguientes medios:</p>
+                        <div class="contacts">
+                          <div class="contacts_left">  
+                           <h3 class="subtitle">Contactos Personales</h3> 
+                            <ul>
+                                <li>luis.ninni@seleccionweb.com</li>
+                                <li>micaela.ninni@seleccionweb.com</li>
+                            </ul>
+                            <h3 class="subtitle">Contactos por Area</h3> 
+                            <ul>
+                                <li>info@seleccionweb.com</li>
+                                <li>ventas@seleccionweb.com</li>
+                                <li>soporte@seleccionweb.com</li>
+                                <li>clientes@seleccionweb.com</li>
+                                <li>candidatos@seleccionweb.com</li>
+                            </ul>
+                            <h3 class="subtitle">Redes Sociales</h3> 
+                            <ul>
+                                <li class="social"><?php echo $html->image("skype.png", array('alt' => 'skype')) ?></li>
+                                <li class="social"><?php echo $html->image("face.png", array('alt' => 'facebook')) ?></li>
+                                <li class="social"><?php echo $html->image("twitter.png", array('alt' => 'twitter')) ?></li>
+                                <li class="social"><?php echo $html->image("linkedin.png", array('alt' => 'linkedin')) ?></li>
+                            </ul>
+                        </div>
+                        
+                        <div class="form">
+                            <h3 class="subtitle">Contactanos Ahora</h3>
+                            <form action="#">
+                                <p>Nombre</p><input type="text" />
+                                <p>Empresa</p><input type="text" />
+                                <p>Email</p><input type="text" />
+                                <p>Mensaje</p><textarea cols="30" rows="10"></textarea>
+                                <p><input type="submit" class="submit" value=" "/></p>
+                            </form>
+                        </div>
+                      </div>  
+                    </div>
+               </div>  
+            </div>
 </div>

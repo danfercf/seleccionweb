@@ -1,0 +1,11 @@
+
+div.divSeccion1
+    {
+      
+        height: 512px ;
+        width: 1341px ;
+        
+        
+        background: url("../images/bg_header.png") repeat scroll left top transparent;        
+         
+    }

@@ -1,0 +1,248 @@
+
+/* --- regsitrate --- */
+
+#content .head_content .main h1.title_reg
+{
+    margin: 32px 0;
+    padding: 0;
+    text-align: center;
+    width: 100%;
+}  
+
+label.L_Persona_Empresa
+{
+font-size: 15px;
+}
+
+
+
+
+#main .contacts #RadiosOp
+{
+height: 50px;
+*height: 50px;
+height: 50px \9;
+
+width: 500px;
+*width: 500px;
+width: 500px \9;
+
+}
+
+#main .contacts  #EligOp  h3.subTitle
+{
+
+border-bottom: 2px solid #075B8D;
+color: #075B8D;
+font-family: Museo500;
+font-size: 23px;
+margin: 25px 0;
+width: 503px;
+
+}
+
+
+.rTipoPersona1
+{
+left: 0px; 
+width: 50px;
+} 
+
+.rTipoPersona2
+{
+
+margin-left: 30px;
+/* left: 20px;*/
+width: 50px;
+
+}
+
+#LineaP1
+{
+color: #444444;
+font-family: MuseoSans;
+font-size: 30px;
+*font-size: 30px;
+font-size: 30px \9;    
+margin-left: 95px;
+text-align: justify;
+
+}                
+#LineaP2
+{
+margin-left: 60px;
+width:640px;
+font-size: 20px;
+font-family:MuseoSans;
+color:#444444;
+text-align: center;
+}   
+
+.Divs_Izq
+{
+
+width: 280px;
+/* height: 70px;*/  
+
+}
+.Divs_Der
+{
+height: 70px;
+
+width:290px;
+
+
+
+}                
+
+
+
+input.entradaDatos
+{
+height: 25px;
+width: 200px;   
+}
+
+.Divs_Der input.entradaDatosDer
+{
+height: 25px;                    
+
+width: 260px;                          
+
+
+}
+label.L4_area
+{
+font-size: 12px;
+color: LightGray;
+
+
+
+}
+
+input.entradaArea
+{
+height: 25px;
+width: 53px  !important;                       
+
+
+}
+
+.mes 
+{
+height: 25px;
+width: 50px;
+margin-left: 18px;
+}
+
+.anio
+{
+height: 25px;
+width: 50px;
+margin-left: 18px;   
+}
+
+
+input.entradaNumero
+{
+height: 25px;
+width: 185px !important;
+margin-left: 8px;
+
+}
+label.L4_Numero
+{
+
+font-size: 12px;
+margin-left: 10px;
+color: LightGray;
+
+} 
+
+label.L5_DD
+{
+margin-left: 15px;
+
+color: LightGray;
+width: 50px;  
+
+
+}     
+
+LABEL.L5_MM{
+margin-left: 35px;
+}
+
+
+
+.linea
+{
+
+
+border-bottom: 1px solid lightGrey;
+*border-bottom: 1px solid lightGrey;
+border-bottom: 1px solid lightGrey \9;
+
+margin-right:  229px;
+
+}
+
+#checkBox
+{
+height: auto;
+    margin: 0;
+    padding: 0;
+    width: auto;
+}
+#L7_checkBox1
+{
+font-size: 10px;
+margin-left: 15px;
+margin-top: -12px;
+width: 433px;
+}
+#L7_checkBox2
+{
+display: inline;
+float: none;
+font-size: 10px;
+font-size: 10px;
+color: #67AF00;
+text-decoration: underline;   
+}             
+
+
+/*             
+label.color_L7
+{
+border-bottom: 1px solid #51a000;    
+color: #51a000;
+}
+*/  
+
+.botton .Divs_Der input.btnRegistrate
+{
+background:url(../img/btn_registrarse2.png) no-repeat left top transparent ; 
+height: 50px;
+width: 192px;
+margin-left: 25px;
+border: medium none;
+cursor: pointer;
+}                                                  
+
+
+ #content .content_content #main .content_up_how .contacts .registrate
+ {
+    /*margin:35px auto;*/
+    width:900px;
+    overflow: hidden;
+    /*
+    margin-left: 170px;*/
+    
+    margin-left: 170px;
+    
+}
+.botton
+{
+    
+}

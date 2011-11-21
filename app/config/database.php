@@ -6,8 +6,8 @@ class DATABASE_CONFIG {
 		'persistent' => false,
 		'host' => 'localhost',
 		'login' => 'root',
-		'password' => '',
-		'database' => 'selweb2',
+		'password' => 'root',
+		'database' => 'selecci1_dev',
 		
 	);
 	/*
