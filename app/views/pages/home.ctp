@@ -19,7 +19,7 @@ $ba = $this->requestAction("/languages/reader/banner");
     <div class="content-left">
          <?php echo $ba['eficiencia']?>
         <!--div>
-            <h2>Eficiencia en procesos de Selecci&oacute;n</h2>
+            <h2>E en procesos de Selecci&oacute;n</h2>
             <h3><b>Primer plataforma 2.0</b> para  Selecci&oacute;n o Preselecci&oacute;n de Recursos Humanos mediante el uso de un nuevo concepto</h3>
             <h3><b>La Video selecci&oacute;n.</b></h3>
         </div-->
