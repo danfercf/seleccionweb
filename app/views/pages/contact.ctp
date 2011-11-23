@@ -18,8 +18,8 @@ $(document).ready(function() {
               <div class="content_content">
                <div id="main">
                     <div class="content_up_how">
-                        <p>  Si desea recibir información sobre nuestro servicio, comuníquese </p>
-                        <p> con nosotros completando el formulario o por los siguientes medios:</p>
+                        <p class="inicio">Si desea recibir información sobre nuestro servicio, comuníquese</p>
+                        <p class="inicio">con nosotros completando el formulario o por los siguientes medios:</p>
                         <div class="contacts">
                           <div class="contacts_left">  
                            <h3 class="subtitle">Contactos Personales</h3> 

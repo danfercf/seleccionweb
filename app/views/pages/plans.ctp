@@ -35,16 +35,6 @@ $ba = $this->requestAction("/languages/reader/banner");
                 height: 21px;
             
          }
-         
-         
-         /*
-         #content .content_content #main .content_up_how .middle .price .hire  #divPrecio
-                {
-                    
-                    
-                }
-           */     
-                
     /*FIN NUEVO*/
     </style>
     
@@ -116,9 +106,9 @@ $('#slider').slider({
                         <div class="plans">
                             <ul>
                                 <li>
-                                    <p class="basic">Basic</p><p class="fifty">50</p>
-                                    <p class="usd">USD</p><p class="select">10 VIDEO SELECCIONES</p>
-                                    
+                                    <p class="basic">Basic</p>
+                                    <p class="fifty">50</p>
+                                    <p class="usd1">USD</p><p class="select">10 VIDEO SELECCIONES</p>
                                     <?php echo $html->link($b['registro'], "/pages/register") ?> 
                                     <input type="button" class="reg" /></li>
                                     </a>

@@ -19,14 +19,10 @@ font-size: 15px;
 
 #main .contacts #RadiosOp
 {
-height: 50px;
-*height: 50px;
-height: 50px \9;
-
-width: 500px;
-*width: 500px;
-width: 500px \9;
-
+    height: 50px;
+    /*margin: auto;*/
+    padding: 0 0 0 66px;
+    width: 578px;
 }
 
 #main .contacts  #EligOp  h3.subTitle
@@ -222,7 +218,7 @@ color: #51a000;
 
 .botton .Divs_Der input.btnRegistrate
 {
-background:url(../img/btn_registrarse2.png) no-repeat left top transparent ; 
+background:url("../img/btn_registrarse2.png") no-repeat left top transparent ; 
 height: 50px;
 width: 192px;
 margin-left: 25px;

@@ -69,6 +69,11 @@ class LanguagesController extends AppController
     {
         $this->Cookie->write('lang', $key, false, '20 days');
     }
+    function leer()
+    {
+        $lang=$this->Cookie->read('lang');
+        return $lang;
+    }
     function reader($tipo= null)
     {
         $this->layout = 'ajax';

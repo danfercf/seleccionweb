@@ -33,26 +33,72 @@ $ba = $this->requestAction("/languages/reader/banner");
         }
 </style>
 <?php echo $this->Session->flash(); ?>
+<div class="head_home">
+        <div class="content_head">
+                        <div class="text">
+                            <h1>La mejor forma para seleccionar personal</h1>
+                            <p>Una plataforma fácil y rápida diseñada para que empresas, consultoras 
+                                o profesionales que necesiten reducir tiempos y costos, en la selección
+                                de personal, un nuevo concepto, Video Entrevistas de preselección.</p>
+                            <div class="btn">EMPEZA AHORA</div>
+                            <p class="btn_p">o conoce como funciona</p>    
+                        </div>
+                        <div class="video">
+                                <?php
+                                    echo $this->Html->link(
+                                            $this->Html->image(
+                                                    "ver_video.png", array("alt" => "Ver video")),
+                                            "../files/videos/home.flv",
+                                            array('escape' => false, 'id' => "video-main", 'style' => "display:inline-block;width:452px;height:298px")
+                                    )
+                                ?>
+                                    <!-- this will install flowplayer inside previous A- tag. -->
+                                  
+                                <div id="video_player" style="display: inline-block; background-color: #000;">
+                                    <div id="player" style="background-color: #000;">
+                                        <object width="452" height="298" id="f4Player" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000"> 
+                                            <param name="movie" value="<?php echo $this->Html->url('/', true); ?>/files/player.swf" /> 
+                                            <param name="quality" value="high" /> 
+                                            <param name="menu" value="false" /> 
+                                            <param name="allowFullScreen" value="true" /> 
+                                            <param name="scale" value="noscale" /> 
+                                            <param name="allowScriptAccess" value="always" />
+                                            
+                                            <param name="swLiveConnect" value="true" />
+                                            <param name="flashVars" value="skin=<?php echo $this->Html->url('/', true); ?>/files/skins/mySkin.swf
+                                            	&thumbnail=<?php echo $this->Html->url('/', true); ?>/img/ver_video.png
+                                            	&video=<?php echo $this->Html->url('/', true); ?>/files/videos/home.flv
+                                                
+                                            	"/>
+                                        <!-- [if !IE] -->
+                                            <object width="452" height="298" data="<?php echo $this->Html->url('/', true); ?>/files/player.swf" type="application/x-shockwave-flash" id="f4Player">
+                                                <param name="quality" value="high" /> 
+                                                <param name="menu" value="false" /> 
+                                                <param name="allowFullScreen" value="true" /> 
+                                                <param name="scale" value="noscale" />
+                                                <param name="allowScriptAccess" value="always" />
+                                                <param name="swLiveConnect" value="true" />
+                                                
+                                                <param name="flashVars" value="skin=<?php echo $this->Html->url('/', true); ?>/files/skins/mySkin.swf
+                                                	&thumbnail=<?php echo $this->Html->url('/', true); ?>/img/ver_video.png
+                                                	&video=<?php echo $this->Html->url('/', true); ?>/files/videos/home.flv
+                                                    &autoplay=1
+                                                	"/>
+                                            </object> 
+                                         <!-- [endif] --> 
+                                        </object>
+                                    </div>      
+                                </div> 
+                        </div>
+        </div>
+</div>
 <div id="content">
-        
-                <div class="divSeccion1">                
-                    <div id="main">
-                    
-                    </div>
-                        <!-- 
-                            <div class="divSeccion1_1">                                                                     
-                            </div>                           
-                            <div class="divSeccion1_2">                       
-                            </div> 
-                        -->
-                </div>
-                   
             <div class="head_content"> 
               <div class="main">
                 <h2>Prueba Gratis SeleccionWEb por 30 dias</h2>
-                
+                                
                 <div class="btn_1">
-                        <a href="registrate.html">Regsitrate hoy para tu version de prueba</a>
+                        <?php echo $html->link("Registrate hoy para tu version de prueba", "/pages/register") ?>
                 </div>
               </div>  
             </div>    
@@ -62,11 +108,11 @@ $ba = $this->requestAction("/languages/reader/banner");
                     <div class="content_left_text">
                         <h3>Principales Caracteristicas</h3>
                         <ul>
-                            <li><img src="images/people.png" /><div class="text_info"><h4><a href="#">Analize los perfiles</a></h4><p>Vea las características de los candidatos y sus habilidades de comunicación, analice las respuestas a sus preguntas las cuales revelaran cualidades
+                            <li><?php echo $html->image("people.png", array('alt' => '')) ?><div class="text_info"><h4><a href="#">Analize los perfiles</a></h4><p>Vea las características de los candidatos y sus habilidades de comunicación, analice las respuestas a sus preguntas las cuales revelaran cualidades
                                                                                                                 importantes que un curriculum vitae no le dirá.</p></div></li>
-                             <li><img src="images/think.png" /><div class="text_info"><h4><a href="#">Interaccion con los candidatos</a></h4><p>Escriba y envíe a todos los candidatos todas las preguntas que desee conocer de ellos para que  le respondan grabándose frente a su cámara web antes de realizar la entrevista cara a cara.</p></div></li>
-                             <li><img src="images/file.png" /><div class="text_info"><h4><a href="#">Guardar Selecciones</a></h4><p>Supera los conflictos de agenda, SeleccionWeb le permite realizar múltiples selecciones sin tener en cuenta las zonas horarias o geográficas.</p></div></li>
-                             <li><img src="images/clock.png" /><div class="text_info"><h4><a href="#">Tiempos y Costos</a></h4><p>Ahorre tiempo y reduzca costos operativos en los procesos de selección o preselección de personal.</p></div></li>
+                             <li><?php echo $html->image("think.png", array('alt' => '')) ?><div class="text_info"><h4><a href="#">Interaccion con los candidatos</a></h4><p>Escriba y envíe a todos los candidatos todas las preguntas que desee conocer de ellos para que  le respondan grabándose frente a su cámara web antes de realizar la entrevista cara a cara.</p></div></li>
+                             <li><?php echo $html->image("file.png", array('alt' => '')) ?><div class="text_info"><h4><a href="#">Guardar Selecciones</a></h4><p>Supera los conflictos de agenda, SeleccionWeb le permite realizar múltiples selecciones sin tener en cuenta las zonas horarias o geográficas.</p></div></li>
+                             <li><?php echo $html->image("clock.png", array('alt' => '')) ?><div class="text_info"><h4><a href="#">Tiempos y Costos</a></h4><p>Ahorre tiempo y reduzca costos operativos en los procesos de selección o preselección de personal.</p></div></li>
                         </ul>
                     </div>
                     <div id="sidebar">

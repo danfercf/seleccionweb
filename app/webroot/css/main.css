@@ -16,13 +16,13 @@ src: url('font/MuseoSans-300.otf');
 #header
 {
     background: url("../img/bg_header.png") repeat-y scroll left top transparent;
-    height: 108px;
+    /*height: 108px;*/
     overflow: hidden;
 }
 #head
     {
         overflow: hidden;
-        margin-top: 12px; 
+        /*margin-top: 12px;*/ 
     }
 /* separacion*/
 .sep
@@ -47,54 +47,65 @@ a
 {
     width:960px;
     margin:0 auto;
+    padding-top: 46px;
+    position: relative;
 
 }
 
-.menu_top{
-    /*overflow: hidden;*/
+.menu_top {
+    float: right;
+    position: absolute;
+    right: 5px;
+    text-align: center;
+    top: 0;
     width: 245px;
-    float:right;
 }
-#main #head .menu_top ul { } 
+
+#main #head .menu_top ul li { 
+    /*background: url("../img/bg_menutop.png") repeat-y scroll left top transparent;*/
+}
+
 #main #head .menu_top ul li.left{
-    background:url("../img/bg_menutop.png") repeat-y left top transparent;
+    background: none repeat scroll 0 0 #085171;
     float: left;
-    height: 31px;
-    margin-top: 1px;
-    padding: 0 0 0 12px;
-    width: 60px;
+    height: 32px;
+    width: auto;
 }
 #main #head .menu_top ul li.center{
-    background:url("../img/bg_menutop1.png") repeat-y left top transparent;
+    background: none repeat scroll 0 0 #085171;
     float: left;
-    height: 29px;
-    padding: 3px 0 0 12px;
-    width: 53px;
+    height: 32px;
+    margin: 0 0 0 1px;
+    width: auto;
 }
 
 #main #head .menu_top ul li.right
 {
-  /*  background:url(../img/bg_menutop2.png) repeat-y left top transparent;*/
+    background: url("../img/head_der.png") repeat-x scroll left top transparent;
     float: left;
     height: 29px;
-     padding: 3px 0 0 0;
-    width: 80px;
-    
-    
+    margin: 0 0 0 1px;
+    width: auto;
 }
 
 #main #head .menu_top ul li a
 {
-    padding: 2px 0 0 2px;
-    
-    
+    display: block;
+    font-family: arial;
+    font-size: 11px;
+    height: 23px;
+    padding: 9px 12px 0;
+}
+#main #head .menu_top ul li.left a {
+    padding: 9px 12px 0 8px;
 }
 #nav {
         width: auto;
         height: auto;
 		margin:0; 
 		padding:0; 
-		list-style:none;       
+		list-style:none;
+            
 	}	
 
 /* make the LI display inline */
@@ -115,20 +126,20 @@ a
 
 /* this is the parent menu */
 #nav li a {
-	display:inline-block; 
-	padding:8px 5px 0 5px; 
-	font-weight:700;  
-	height:23px; 
-	text-decoration:none; 
-	color:#fff; 
-	text-align:center; 
-	color:#333;
+	color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    height: 23px;
+    padding: 6px 5px 0 0 !important;
+    text-align: center;
+    text-decoration: none;
 }
 
 
 #nav li a:hover 
 {
-	color:#fff;
+	/*cursor:pointer;
+    color:#fff;*/
    /*color: #FFFFFF;*/
 }
 
@@ -143,20 +154,22 @@ a
 }
 #nav ul li  a label.lNomPais_1_2 
 {   
- float: none;
+    cursor: pointer !important;
+    float: none;
     left: 19px;
     position: absolute;
     top: 2px;
+    padding: 0 2px 0 0 !important;
 }	 
      
 
 #nav ul li  a label.lNomPais_3 
 {   
-   display: inline-block;
+    display: inline-block;
     float: none;
     left: 15px;
     position: absolute;
-        top: 2px;
+    top: 2px;
     width: 15px;
      
 }
@@ -164,10 +177,11 @@ a
 #nav li  a label.L_idiomas 
 {   
    
-   float: none;
+    float: none;
     left: 10px;
     position: absolute;
     top: 8px;
+    color:#FFFFFF;
    /* width: 15px;*/
      
 }
@@ -204,7 +218,7 @@ a
 	border-top:1px solid #fff ;
    /* display: inline;*/
     /*border-top:1px solid #FFFFFF  ;*/
-    background: url("../img/bg_menutop.png")repeat-y scroll left top transparent ;
+    /*background: url("../img/bg_menutop.png")repeat-y scroll left top transparent ;*/
     
 }
 
@@ -234,9 +248,10 @@ a
     width: 228px;
 }
 #main #head .down ul.menu{
-     float: right;
+    float: right;
     overflow: hidden;
     width: 450px;
+    text-transform: uppercase;
 }
 #main #head .down ul.menu li{
     float: left;
@@ -252,38 +267,52 @@ a
     width: 960px;
     float: left;  
 }
-
-#main .content_head
+.head_home{
+    background: url("../img/bg_header.png") repeat-y scroll left top transparent;
+    padding: 62px 0 0;
+    height: 420px;
+}
+.content_head
 {
     overflow: hidden;
-    margin: 40px 0 60px;
+    /*margin: 40px 0 60px;*/
+    width: 960px;
+    /*height: 430px;*/
+    margin: 0 auto;
+    position: relative;
 }
-#main .content_head .text{
+.content_head .text{
     width:460px;
     float:left;
     margin-top:8px;
     overflow: hidden;
-    
-     
+    /*padding: 0 0 0 148px;*/
+    /*margin-top: 80px;*/   
 }
-#main .content_head .text h1{
+.content_head .text h1{
     color:#fff;
-    font-size:53px;
+    font-size:45px;
     font-family:Museo500;
 }
-#main .content_head .text p{
+.content_head .text p{
     color: #fff;
     font-size: 14px;
     line-height: 25px;
     margin: 17px 0;
 }
-#main .content_head .video{
-    background:url(../img/video.png) no-repeat left top transparent;
-    width:472px;
-    height:320px;
-    float:right;
+.content_head .video{
+    /*background:url(../img/video.png) no-repeat left top transparent;*/
+    border: 10px solid #0B5B84;
+    float: right;
+    /*padding: 0 150px 0 0;
+    margin-top: 80px;*/
 }
-#main .content_head .btn{
+.video img {
+    border: 0 none;
+    height: 298px;
+    width: 452px;
+}
+.content_head .btn{
     background:url(../img/btn_home.png) no-repeat left top transparent;
     float: left;
     height: 40px;
@@ -295,7 +324,7 @@ a
     font-size: 16px; 
     cursor: pointer;
 }
-#main .content_head p.btn_p{
+.content_head p.btn_p{
     color: #FFFFFF;
     font-size: 14px;
     line-height: 25px;
@@ -334,11 +363,11 @@ a
     width: 315px;
 }
 #content .head_content .main .btn_1 a{
-     color: #FFFFFF;
+    color: #FFFFFF;
     font-family: MuseoSans;
-    font-size: 16px;
+    font-size: 15px;
     font-weight: bold;
-    padding: 0 0 0 23px;
+    padding: 0 0 0 11px;
 }
 #content .content_content{
     background:url(../img/bg_content_content.png) repeat-y left top transparent;
@@ -501,7 +530,8 @@ a
     font-size: 11px;
     font:Arial;
     color:#9cbdd1;
-    margin-left: 10px;
+    /*margin-left: 10px;*/
+    padding: 12px 0 0 15px;
 }
 #footer .main .menu_footer{
     float:left;
@@ -597,29 +627,28 @@ a
                         color:#444444;
                     }
 
-#content 
-        .content_content 
-                        #main 
-                            .content_up_how
-                            {
+#content .content_content #main .content_up_how{
     background-color: #FFFFFF;
-//    height: 850px;
+    /*height: 850px;*/
     height:  auto;
-    margin-top: 20px;
+    /*margin-top: 20px;*/
     overflow: hidden;
-    padding-bottom: 74px;
-                            }
-                            
+    padding: 40px 0 75px 25px;
+    margin-bottom: 22px;
+    margin-top: -22px;
+}
+                          
 #content .content_content #main .content_up_how .video{
    /* background:url(../img/video_how.png) no-repeat left top transparent;*/
     float: left;
     height: 284px;
-    margin: 0 20px 50px 30px;
+    margin: 0 53px 50px 0;
     width: 418px;
 }
 #content .content_content #main .content_up_how .text{
     float: left;
-    margin: 0 0 50px;
+    /*margin: 0 0 50px;*/
+    
     width: 450px;
 }
 #content .content_content #main .content_up_how .text p{
@@ -646,6 +675,7 @@ a
 #content .content_content #main .content_down_how{
     background-color: #FFFFFF;
     margin-bottom: 50px;
+    margin-top:32px;
     overflow: hidden;
 }
 #content .content_content #main .content_down_how .content_down_how_left{
@@ -786,7 +816,17 @@ a
     float:right;
     
     /*y*/
-     margin-right: -556px;
+    margin-right: -565px;
+    margin-top: -25px;
+}
+#content .content_content #main .content_up_how .plans p.usd1{
+    /*margin: 25px 0 0 5px;*/
+    font-family:MuseoSans;
+    font-size:14px;
+    float:right;
+    
+    /*y*/
+    margin-right: -545px;
     margin-top: -25px;
 }
 #content .content_content #main .content_up_how .plans p.select{
@@ -944,6 +984,16 @@ a
     font-family:MuseoSans;
     color:#444444;
 }
+.inicio{
+    margin:0 auto;
+    width:640px;
+    font-size: 19px !important;
+    font-weight: bold;
+    font-family:MuseoSans;
+    color:#444444;
+    text-align: center;
+}
+
     #content .content_content #main .content_up_how p span 
     {
         
@@ -1076,4 +1126,155 @@ a
     width: 19px;
     text-indent: 9999px;
 }
+/***** clases lenguajes *****/
+.es{
+    background: url("../img/flags/es.png") no-repeat scroll 5px center transparent;
+}
+.en{
+    background: url("../img/flags/en.png") no-repeat scroll 5px center transparent;
+}
+.pt{
+    background: url("../img/flags/pt.png") no-repeat scroll 5px center transparent;
+}
 
+/***** END clases lenguajes *****/
+
+/****** content login *****/
+
+#box-members .cont-login-top
+{
+    background: url("../img/bg_regulador.png") no-repeat scroll 0 0 transparent;
+    height: 45px;
+    overflow: hidden;
+    width: 301px;
+}
+
+#box-members .cont-login-top h2
+{
+    color: #FFFFFF;
+    font-family: arial;
+    font-size: 15px !important;
+    font-weight: bold !important;
+    padding: 10px 17px;
+}
+
+#box-members .cont-login-center
+{
+    background: url("../img/bg-login-clients.png") repeat-x scroll 0 0 #EDEDED;
+    border-left: 1px solid #BCBBBB;
+    border-right: 1px solid #BCBBBB;
+    overflow: hidden;
+    padding-left: 14px;
+    padding-right: 14px;
+    padding-top: 15px;
+    width: 271px;
+}
+
+#box-members .cont-login-center li
+{
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+#box-members .cont-login-center li input
+{
+    background: url("../img/bg_input_registro.png") no-repeat scroll 0 0 transparent;
+    border: medium none;
+    color: #A09E9E;
+    font-family: arial;
+    height: 15px;
+    margin: 4px 0;
+    padding: 10px 5px;
+    width: 222px;
+}
+
+#box-members .cont-login-center li label
+{
+    color: #000000;
+    font-family: Arial;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+#box-members .cont-login-center li a
+{
+    color: #306088;
+    font-family: Arial;
+    font-size: 12px;
+    font-weight: normal;
+    text-decoration: underline;
+}
+
+#box-members .cont-login-center li button
+{
+    background: url("../img/button_enviar_contacto.png") no-repeat scroll 0 0 transparent;
+    border: medium none;
+    color: #FFFFFF;
+    cursor: pointer;
+    float: right;
+    font-family: arial;
+    font-size: 14px;
+    font-weight: bold;
+    height: 30px;
+    margin-left: 0;
+    padding: 0;
+    text-align: center;
+    width: 89px;
+}
+
+#box-members .cont-login-bottom
+{
+    background: url("../img/bg_login_bottom.png") no-repeat scroll 0 0 transparent;
+    height: 4px;
+    overflow: hidden;
+    width: 301px;
+}
+
+#box-members .cont-login-center li p
+{
+    color: #515151;
+    font-family: Arial;
+    font-size: 12px;
+    font-weight: normal;
+    margin-top: 0px;
+    text-align: justify;
+}
+
+/****** end content login *****/
+
+/****** terms and contitions *****/
+
+#terms_conditions p {
+    color: #515151;
+    font-family: arial;
+    font-size: 12px;
+    font-weight: normal;
+}
+
+/****** END terms and contitions *****/
+#main #head .menu_top ul li.right ul#language .menu_header_lang{
+    display: none;
+}
+#main #head .menu_top ul li.right ul#language li{
+    background: url("../img/head_der.png") repeat-x scroll left top transparent; 
+}
+#main #head .menu_top ul li.right ul#language li a{
+    cursor: pointer;
+    display: block;
+    font-family: arial;
+    font-size: 11px;
+    height: 22px;
+    padding: 7px 7px 0 30px;
+    text-align: left;
+}
+#main #head .menu_top ul li.right ul#language li a.titulo{
+    
+
+}
+#main #head .menu_top ul li.more_left {
+    float: left;
+    width: 6px;
+    height: 32px;
+    text-indent: -99999px;
+    background: url("../img/head_izq.png") no-repeat scroll left top transparent; 
+}

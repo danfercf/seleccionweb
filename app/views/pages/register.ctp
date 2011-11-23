@@ -70,16 +70,17 @@ echo $this->Html->css('core.css');
               <div class="content_content">
                <div id="main">
                     <div class="content_up_how">
-                        <p id="LineaP1">  Registrarse en el portal es muy simple y gratuito. </p>
-                        <p id="LineaP2"> Para mayor información escribanos a <span>info@seleccionweb.com</span></p>
+                        <p id="LineaP1" style="text-align: center; font-size: 26px; font-weight: bold;">  Registrarse en el portal es muy simple y gratuito. </p>
+                        <p id="LineaP2" style="text-align: center; font-size: 16px;font-weight: bold;"> Para mayor información escribanos a <span>info@seleccionweb.com</span></p>
                                               
                                                                       
-                        <div class="contacts">                                                                                                                                              <div class="top">
+                        <div class="contacts">
+                            <div class="top">
                         
                                     <div id="EligOp">
                                          <h3 class="subTitle">  Elige tu opción de registro </h3>    
                                     </div>
-                                                                                                      
+                            </div>                                                                          
                                     <div id="RadiosOp">
                                             <input class="rTipoPersona1" type="radio"  name="rTipoPersona" value="Particular"  checked="true"  />
                                             
@@ -91,7 +92,7 @@ echo $this->Html->css('core.css');
                                             
                                         
                                     </div>  
-                                </div>
+                               
                                 <div class="botton">
                                 
                                        <div class="Divs_Izq">                                     

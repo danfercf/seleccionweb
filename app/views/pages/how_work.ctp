@@ -125,9 +125,11 @@
                                                                               SeleccionWeb garantiza la privacidad de tus respuestas. 
                                                                          </p>
                                                   </div>
+                                                  <p>
                                                    <a href="registrate.html">
                                                         <input type="button" class="buttom"  />
-                                                  </a>  
+                                                  </a>
+                                                  </p>  
                                 </div>
                             </div>
                     
@@ -151,38 +153,40 @@
                                     <h3>Testimonios</h3>
                                         <ul>
                                             <li>
-                                                    <img src="images/photo1.png" class="photo"/>
+                                                    <?php echo $html->image("photo1.png", array('class' => 'photo')) ?>
                                                     <div class="test">
-                                                            <img src="images/open.png" class="open"/>
+                                                                <?php echo $html->image("open.png", array('class' => 'open')) ?>
                                                                 <p>Fue una experiencia nueva por consecuente senti un poco de nervios al desarrollarla, pero                                                                       creo que  es una herramienta muy util para mejorar la selección de recursos humanos... 
                                                                 </p>
-                                                                <img src="images/close.png" class="close"/> 
-                                                                    <p>- Marcos Rivero. <a href="#">Postulante</a></p>
+                                                                <?php echo $html->image("close.png", array('class' => 'close')) ?>
+                                                                <p>- Marcos Rivero. <a href="#">Postulante</a></p>
                                                     </div>
-                                                        <img src="images/line.png" class="line"/>
+                                                        <?php echo $html->image("line.png", array('class' => 'line')) ?>
+                                                        
                                             </li>
                                             <li>
-                                            <img src="images/photo2.png" class="photo"/>
+                                            <?php echo $html->image("photo2.png", array('class' => 'photo')) ?>
                                             
                                             <div class="test">
-                                                        <img src="images/open.png" class="open"/>
+                                                        <?php echo $html->image("open.png", array('class' => 'open')) ?>
                                                         <p>
                                                              La verdad que no sabia que se podian realizar entrevistas con esta modalidad. Pienso que es mucho                                                              mas efectivo que un examen online porque podes ver los gestos de la persona y las tonalidades                                                                 con las que habla. Fue una muy linda experiencia... 
                                                         </p>
                                                         
-                                                            <img src="images/close.png" class="close"/>
+                                                            <?php echo $html->image("close.png", array('class' => 'close')) ?>
                                                             <p>- Stephanie Eskenazi. <a href="#">Cliente de Empresas</a></p>
                                                </div>
-                                                <img src="images/line.png" class="line"/>
+                                                <?php echo $html->image("line.png", array('class' => 'line')) ?>
                                             </li>
                                             <li>
                                             
-                                            <img src="images/photo3.png" class="photo"/>
+                                            <?php echo $html->image("photo2.png", array('class' => 'photo')) ?>
                                             <div class="test">
-                                            <img src="images/open.png" class="open"/><p>Una nueva experiencia, sumamente interesante desde el punto de vista del candidato, ya que permite acomodar sus horarios; y desde el punto de vista de la empresa, ya que permite realizar una primera preselección de candidatos. Felicito lo innovador del servicio que brindan... </p>
-                                            <img src="images/close.png" class="close"/>
+                                            <?php echo $html->image("open.png", array('class' => 'open')) ?>
+                                            <p>Una nueva experiencia, sumamente interesante desde el punto de vista del candidato, ya que permite acomodar sus horarios; y desde el punto de vista de la empresa, ya que permite realizar una primera preselección de candidatos. Felicito lo innovador del servicio que brindan... </p>
+                                            <?php echo $html->image("close.png", array('class' => 'close')) ?>
                                             <p>- Gonzalo Iglesias.. <a href="#">Postulante</a></p>
-                                            </div><img src="images/line.png" class="line"/>                                            
+                                            <?php echo $html->image("line.png", array('class' => 'line')) ?>                                            
                                             </li>
                                         </ul>
                                 </div>
