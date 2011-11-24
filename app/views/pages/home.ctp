@@ -5,7 +5,7 @@ $ba = $this->requestAction("/languages/reader/banner");
 ?>
 
 <script type="text/javascript" >
-    $(function(){
+        $(function(){
         $('#video_player').hide();
         $('#video-main').click(function(){ 
             $(this).hide();
@@ -13,6 +13,7 @@ $ba = $this->requestAction("/languages/reader/banner");
             return false;
         })
         });
+        
         $(function()
                 {
                     $('#slider1').bxSlider({

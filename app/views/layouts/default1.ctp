@@ -44,8 +44,7 @@
     echo $this->Html->css('nuevos/ui.theme.css');*/
     
     
-    /*echo $this->Html->script('jquery/jquery-1.4.4.min.js');*/
-    echo $this->Html->script('jquery/jquery-1.7.min.js');
+    echo $this->Html->script('jquery/jquery-1.4.4.min.js');
     echo $this->Html->script('jquery/jquery-ui-1.8.9.custom.min.js');
     echo $this->Html->script('jquery/jquery.infieldlabel.min.js');
     /*echo $this->Html->script('ezmark/jquery.ezmark.min.js');*/
@@ -59,8 +58,8 @@
     echo $this->Html->script('jquery/jquery.bxSlider.min.js');
     
     $ln = $this->requestAction("/languages/leer");
-   // echo "::::::::::: ".$ln;
-    if($ln=="") $ln="es";   
+    
+    
 ?>
 
     <!--[if lte IE 6]>
@@ -75,35 +74,32 @@
     <![endif]-->
     <script type="text/javascript">
         $(document).ready(function() {
-        	/*$("#commentForm").validate({
+        	$("#commentForm").validate({
                     errorLabelContainer: $("#commentForm fieldset div.error")
                 });
-            */
                        
-             /*var html=$("#language li").find(".<?php echo $ln?>").html();
-                          
+             var html=$("#language li").find(".<?php echo $ln?>").html();
+             
              $("#language li").find(".<?php echo $ln?>").parent().remove();
+             $("#language li a.titulo").css({'background' : 'url("<?php echo $this->Html->url('/') ?>img/flags/<?php echo $ln?>.png") no-repeat scroll 5px center transparent','cursor':'none'}).html(html);
              
-             $("#language li a.titulo").css({'background' : 'url("<?php echo $this->Html->url('/') ?>img/flags/<?php echo $ln?>.png") no-repeat scroll 5px center transparent'}).html(html);
-            */
              
-             $("#language").hover(function(){
+              $("#language").hover(function(){
                 $("#language .menu_header_lang").slideToggle("fast");
                 return false;
               });
-              
-             $("#language li a").click(function(){
+            
+            $("#language li a").click(function(){
 
                 var key=$(this).attr("key");
+    
                 
-                if(key!=null){
                     $.ajax({
                       url: '<?php echo $this->Html->url(array( "controller" => "languages","action" => "get"));?>/'+key,
                       success:function(data){
                            location.reload();
                         }
                     });
-                  }
                 return false;
             });
          
@@ -142,28 +138,16 @@ $langs = $this->requestAction("/languages/reader_lang");
                         </li>
                         <li class="right">
                                       <ul id="language">
-
-                                         <li>
-                                         <?php
-                                                    foreach($langs as $row)	:
-                                                    if($row['Language']['key'] == $ln){
-                                                ?>
-                                                                       
-                                                <a class="titulo <?php echo $row['Language']['key'];?>" ><?php if($row['Language']['key']=="es"){echo "Espanol";}if($row['Language']['key']=="en"){echo "Ingles";}if($row['Language']['key']=="pt"){echo "Potugues";}?></a>
-                                                
-                                                <?php } endforeach; ?>
-                                         
-                                         
-                                                                                   
+                                        
+                                         <li><a class="titulo"></a>                                            
                                         		<ul class="menu_header_lang">                                                 
                                         		<?php
                                                     foreach($langs as $row)	:
-                                                    if($row['Language']['key'] != $ln){
                                                 ?>
                                                 <li>                       
                                                 <a class="<?php echo $row['Language']['key'];?>"  key="<?php echo $row['Language']['key'];?>"><?php if($row['Language']['key']=="es"){echo "Espanol";}if($row['Language']['key']=="en"){echo "Ingles";}if($row['Language']['key']=="pt"){echo "Potugues";}?></a>
                                                 </li>
-                                                <?php } endforeach; ?>
+                                                <?php  endforeach; ?>
                                                     
                                         		</ul> 
                                         </li>
