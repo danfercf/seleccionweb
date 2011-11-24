@@ -18,8 +18,9 @@ $(document).ready(function() {
               <div class="content_content">
                <div id="main">
                     <div class="content_up_how">
-                        <p class="inicio">Si desea recibir información sobre nuestro servicio, comuníquese</p>
-                        <p class="inicio">con nosotros completando el formulario o por los siguientes medios:</p>
+                    <?php echo $ba['si_desea']?>
+                        
+                        
                         <div class="contacts">
                           <div class="contacts_left">  
                            <h3 class="subtitle">Contactos Personales</h3> 

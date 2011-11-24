@@ -12,6 +12,7 @@
 	<h3><a href="#">Botones</a></h3>
 	<div>
         <ul class="menu-options" layout="botones">
+            <li><span class="ui-icon ui-icon-triangle-1-e"></span><a href="inicio">Inicio</a></li>
             <li><span class="ui-icon ui-icon-triangle-1-e"></span><a href="como_funciona">Como funciona</a></li>
             <li><span class="ui-icon ui-icon-triangle-1-e"></span><a href="planes">Planes</a></li>
             <li><span class="ui-icon ui-icon-triangle-1-e"></span><a href="registro">Registro</a></li>
@@ -28,6 +29,9 @@
             <li><span class="ui-icon ui-icon-triangle-1-e"></span><a href="es_un_registro">Es un registro...</a></li>
             <li><span class="ui-icon ui-icon-triangle-1-e"></span><a href="he_leido">He leido y acepto...</a></li>
             <li><span class="ui-icon ui-icon-triangle-1-e"></span><a href="registrarse">Registrarse</a></li>
+            <li><span class="ui-icon ui-icon-triangle-1-e"></span><a href="acceder">Acceder</a></li>
+            <li><span class="ui-icon ui-icon-triangle-1-e"></span><a href="registrar">Registrar</a></li>
+            <li><span class="ui-icon ui-icon-triangle-1-e"></span><a href="empezar">Empezar</a></li>
         </ul>
 	</div>
     <h3><a href="#">Etiquetas</a></h3>
@@ -50,6 +54,9 @@
             <li><span class="ui-icon ui-icon-triangle-1-e"></span><a href="regulador">Regulador de precio</a></li>
             <li><span class="ui-icon ui-icon-triangle-1-e"></span><a href="contactanos">Contactanos</a></li>
             <li><span class="ui-icon ui-icon-triangle-1-e"></span><a href="registrate">Registrate gratis</a></li>
+            <li><span class="ui-icon ui-icon-triangle-1-e"></span><a href="o_conoce">O conoce como</a></li>
+            
+            
         </ul>
 	</div>
     
@@ -62,6 +69,10 @@
             <li><span class="ui-icon ui-icon-triangle-1-e"></span><a href="copyright">Copyright ...</a></li>
             <li><span class="ui-icon ui-icon-triangle-1-e"></span><a href="terminos">Terminos y condiciones ...</a></li>
             <li><span class="ui-icon ui-icon-triangle-1-e"></span><a href="politica">Politicas de privacidad ...</a></li>
+            <li><span class="ui-icon ui-icon-triangle-1-e"></span><a href="la_mejor">La mejor forma</a></li>
+            <li><span class="ui-icon ui-icon-triangle-1-e"></span><a href="principales_caracteristicas">Principales Caracteristicas</a></li>
+            <li><span class="ui-icon ui-icon-triangle-1-e"></span><a href="pronto_mobile">Pronto Mobile</a></li>
+            <li><span class="ui-icon ui-icon-triangle-1-e"></span><a href="ultimas_novedades">Ultimas Novedades</a></li>
         </ul>
 	</div>
     <h3><a href="#">Banner</a></h3>
@@ -72,6 +83,9 @@
             <li><span class="ui-icon ui-icon-triangle-1-e"></span><a href="ventas">Ventas y planes (plans)</a></li>
             <li><span class="ui-icon ui-icon-triangle-1-e"></span><a href="contacto">Contacto... (contacto)</a></li>
             <li><span class="ui-icon ui-icon-triangle-1-e"></span><a href="registrarse">Registrarse... (registro)</a></li>
+            <!--<li><span class="ui-icon ui-icon-triangle-1-e"></span><a href="si_desea">Si desea recibir... (contacto)</a></li>-->
+            <li><span class="ui-icon ui-icon-triangle-1-e"></span><a href="prueba_gratis">Prueba gratis(home)</a></li>
+            <li><span class="ui-icon ui-icon-triangle-1-e"></span><a href="empresas">Empresas (home)</a></li>
         </ul>
 	</div>
     <h3><a href="#">Formularios</a></h3>

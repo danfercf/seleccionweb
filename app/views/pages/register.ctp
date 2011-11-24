@@ -64,21 +64,21 @@ echo $this->Html->css('core.css');
 <div id="content">
             <div class="head_content"> 
               <div class="main">
-                <h1 class="title_reg"> ¡ Registrate Gratis ! </h1>
+                <h1 class="title_reg"> &iexcl; Registrate Gratis ! </h1>
               </div>  
             </div>    
               <div class="content_content">
                <div id="main">
                     <div class="content_up_how">
                         <p id="LineaP1" style="text-align: center; font-size: 26px; font-weight: bold;">  Registrarse en el portal es muy simple y gratuito. </p>
-                        <p id="LineaP2" style="text-align: center; font-size: 16px;font-weight: bold;"> Para mayor información escribanos a <span>info@seleccionweb.com</span></p>
+                        <p id="LineaP2" style="text-align: center; font-size: 16px;font-weight: bold;"> Para mayor informaci&oacute;n escribanos a <span>info@seleccionweb.com</span></p>
                                               
                                                                       
                         <div class="contacts">
                             <div class="top">
                         
                                     <div id="EligOp">
-                                         <h3 class="subTitle">  Elige tu opción de registro </h3>    
+                                         <h3 class="subTitle">  Elige tu opci&oacute;n de registro </h3>    
                                     </div>
                             </div>                                                                          
                                     <div id="RadiosOp">
@@ -113,12 +113,12 @@ echo $this->Html->css('core.css');
                                         </div>      
                                         
                                         <div class="Divs_Der">
-                                              <label class="L4_Tel"> Teléfono </label>                                    
+                                              <label class="L4_Tel"> Tel&eacute;fono </label>                                    
                                               <input class="entradaArea"  type="text"  name="areaTel"/>                                      
                                             
                                               <input class="entradaNumero"  type="text" name="numeroTel"/>
                                                <label class="L4_area"> Area </label>
-                                               <label class="L4_Numero"> Número </label>                                     
+                                               <label class="L4_Numero"> N&uacute;mero </label>                                     
                                               
                                         </div>   
                                         
@@ -142,12 +142,12 @@ echo $this->Html->css('core.css');
                                         </div>
                                         
                                         <div class="Divs_Izq">                                     
-                                             <label class="L6_Pass"> Contraseña </label><br/>
+                                             <label class="L6_Pass"> Contrase&ntilde;a </label><br/>
                                              <input class="entradaDatos"  type="text" name="pass" />
                                         </div>
                                 
                                         <div class="Divs_Der">
-                                              <label class="L7_RepetirPass"> Repetir Contraseña </label><br />
+                                              <label class="L7_RepetirPass"> Repetir Contrase&ntilde;a </label><br />
                                               <input class="entradaDatosDer"   type="text" name="repPass" />
                                         </div>
                                         
@@ -155,7 +155,7 @@ echo $this->Html->css('core.css');
                                              
                                              <input id="checkBox" type="checkbox"  name="cbkAcepto" />                                     
                                              <label id="L7_checkBox1"> He leido y acepto los 
-                                             <a href="#" id="L7_checkBox2">Términos y condiciones</a>  
+                                             <a href="#" id="L7_checkBox2">T&eacute;rminos y condiciones</a>  
                                              </label>
                                         </div>
                                            

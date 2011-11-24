@@ -20,7 +20,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="es-AR">
 <head>
-<meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 <!--NUEVO-->
 <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/themes/base/jquery-ui.css" type="text/css" media="all" />
 <link rel="stylesheet" href="http://static.jquery.com/ui/css/demo-docs-theme/ui.theme.css" type="text/css" media="all" />
@@ -135,10 +135,11 @@ $langs = $this->requestAction("/languages/reader_lang");
                      <ul>
                         <li class="more_left"></li>
                         <li class="left">
-                        <?php echo $html->link("Acceder", "/users/login") ?>
+                        <?php //echo $html->link($b['conozca_mas'], "/users/login") ?>
+                        <?php echo $html->link($b['acceder'], "/users/login") ?>
                         </li>
                         <li class="center">
-                        <?php echo $html->link("Registrar", "/pages/register") ?>
+                        <?php echo $html->link($b['registrar'], "/pages/register") ?>
                         </li>
                         <li class="right">
                                       <ul id="language">
@@ -149,7 +150,7 @@ $langs = $this->requestAction("/languages/reader_lang");
                                                     if($row['Language']['key'] == $ln){
                                                 ?>
                                                                        
-                                                <a class="titulo <?php echo $row['Language']['key'];?>" ><?php if($row['Language']['key']=="es"){echo "Espanol";}if($row['Language']['key']=="en"){echo "Ingles";}if($row['Language']['key']=="pt"){echo "Potugues";}?></a>
+                                                <a class="titulo <?php echo $row['Language']['key'];?>" ><?php if($row['Language']['key']=="es"){echo "Espa&ntilde;ol";}if($row['Language']['key']=="en"){echo "Ingl&eacute;s";}if($row['Language']['key']=="pt"){echo "Portugues";}?></a>
                                                 
                                                 <?php } endforeach; ?>
                                          
@@ -161,7 +162,7 @@ $langs = $this->requestAction("/languages/reader_lang");
                                                     if($row['Language']['key'] != $ln){
                                                 ?>
                                                 <li>                       
-                                                <a class="<?php echo $row['Language']['key'];?>"  key="<?php echo $row['Language']['key'];?>"><?php if($row['Language']['key']=="es"){echo "Espanol";}if($row['Language']['key']=="en"){echo "Ingles";}if($row['Language']['key']=="pt"){echo "Potugues";}?></a>
+                                                <a class="<?php echo $row['Language']['key'];?>"  key="<?php echo $row['Language']['key'];?>"><?php if($row['Language']['key']=="es"){echo "Espa&ntilde;ol";}if($row['Language']['key']=="en"){echo "Ingl&eacute;s";}if($row['Language']['key']=="pt"){echo "Potugues";}?></a>
                                                 </li>
                                                 <?php } endforeach; ?>
                                                     
@@ -186,7 +187,7 @@ $langs = $this->requestAction("/languages/reader_lang");
                         <ul class="menu">                        
                         <!-- <li><a href="#">HOME</a></li>-->                        
                             <li>
-                            <?php echo $html->link("HOME", "/") ?>
+                             <?php echo $html->link($b['inicio'], "/") ?>
                             </li>                                                        
                             <!-- <li><a href="#">COMO FUNCIONA</a></li>-->
                             <li>
@@ -198,7 +199,7 @@ $langs = $this->requestAction("/languages/reader_lang");
                             
                             <li>
                             <!--Sin traduccion-->
-                            <?php echo $html->link("PLANES", "/pages/plans") ?>
+                            <?php echo $html->link($b['planes'], "/pages/plans") ?>
                             </li>
                             
                             <!--<li><a href="#">BLOG</a></li>-->
@@ -243,28 +244,28 @@ $langs = $this->requestAction("/languages/reader_lang");
                                             array('escape' => false, 'class'=>"logo")
                                         )
                         ?>
-                </div><p>&copy; 2011 Todos los derechos reservados</p>
+                </div><p><?php echo $l['copyright'];?></p>
                 </div>
                 <div class="menu_footer">
                     <ul>
                         <li><div class="row">
-                        <?php echo $html->image("row.png") ?><?php echo $html->link("HOME", "/") ?>
+                        <?php echo $html->image("row.png") ?><?php echo $html->link($b['inicio'], "/") ?>
                         </div></li>
                         <li><div class="row">
                         <?php echo $html->image("row.png") ?><?php echo $html->link($b['conozca_mas'], "/pages/how_work") ?>
                         </div></li>
                         <li><div class="row">
-                        <?php echo $html->image("row.png") ?><?php echo $html->link($b['nuestros_planes'], "/pages/plans") ?>
+                        <?php echo $html->image("row.png") ?><?php echo $html->link($b['planes'], "/pages/plans") ?>
                         </div></li>
                         <li><div class="row">
                         <a href="#" ><?php echo $html->image("row.png") ?>Blog</a>
                         </div></li>
                         <li><div class="row">
-                        <a href="#" ><?php echo $html->image("row.png") ?>Terminos y Condiciones</a>
-                        <?php /*echo $html->image("row.png") */?><?/*php echo $html->link($b['terminos'], "/pages/terms_and_conditions") */?>
+                        <a href="#" ><?php echo $html->image("row.png") ?>T&eacute;rminos y Condiciones</a>
+                        <?php /*echo $html->image("row.png") */?><?php /*echo $html->link($b['terminos'], "/pages/terms_and_conditions") */?>
                         </div></li>
                         <li><div class="row">
-                        <a href="#" ><?php echo $html->image("row.png") ?>Politicas de privacidad</a>
+                        <a href="#" ><?php echo $html->image("row.png") ?>Pol&iacute;ticas de privacidad</a>
                         <?php /*echo $html->image("row.png") */?><?/*php echo $html->link($b['politicas'], "/pages/privacy_policy") */?>
                         </div></li>
                         <li><div class="row">
